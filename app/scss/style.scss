@@ -1,0 +1,23 @@
+@import 'reset.scss';
+@import 'vars';
+@import 'fonts';
+@import 'global.scss';
+@import 'media.scss';
+@import 'animate.scss';
+
+
+//Плагины
+@import '../../node_modules/slick-carousel/slick/slick';
+@import '../../node_modules/animate.css/animate';
+
+
+//Глобальные компоненты
+@import './components/header.scss';
+@import './components/footer.scss';
+
+
+// Pages
+@import './pages/index.scss';
+
+
+

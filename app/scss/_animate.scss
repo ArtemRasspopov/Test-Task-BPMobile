@@ -1,0 +1,47 @@
+.anim-right,
+.anim-left,
+.anim-top,
+.anim-bottom,
+.anim-fade{
+  --animate-duration: 1.7s;
+}
+
+
+.anim-right{
+  animation: fadeInRight;
+}
+
+.anim-left{
+  animation: fadeInLeft;
+}
+
+.anim-top{
+  animation: fadeInDown;
+}
+
+.anim-bottom{
+  animation: fadeInUp;
+}
+
+.anim-fade{
+  animation: fadeIn;
+}
+
+.anim-zoom{
+  animation: zoomIn;
+}
+
+.anim-time-1{
+  --animate-duration: 1.2s;
+}
+
+.anim-time-2{
+  --animate-duration: 2s;
+}
+
+.anim-time-05{
+  --animate-duration: .5s;
+}
+
+
+

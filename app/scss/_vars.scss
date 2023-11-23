@@ -1,0 +1,33 @@
+//цвета
+$default: #7b7b7b;
+$title: #1a1a1a;
+
+
+//расширения шрифтов
+%DMSans-700 {
+  font-family: "DMSans-Bold", sans-serif;
+  font-weight: 700;
+}
+
+//наследования
+%main-width {
+  max-width: 1770px;
+  margin: 0 auto;
+}
+
+%check-none{
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
+%display-center-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
