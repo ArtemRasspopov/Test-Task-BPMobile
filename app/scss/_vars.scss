@@ -1,26 +1,29 @@
 //цвета
-$default: #7b7b7b;
-$title: #1a1a1a;
+$default: #FFF;
 
 
-//расширения шрифтов
-%DMSans-700 {
-  font-family: "DMSans-Bold", sans-serif;
+//шрифты
+%SF-Black {
+  font-family: 'SFProDisplay-Black';
+  font-weight: 800;
+}
+%SF-Bold {
+  font-family: 'SFProDisplay-Bold';
   font-weight: 700;
+}
+%SF-Regular {
+  font-family: 'SFProDisplay-Regular';
+  font-weight: 400;
+}
+%SF-Semibold {
+  font-family: 'SFProDisplay-Semibold';
+  font-weight: 600;
 }
 
 //наследования
 %main-width {
   max-width: 1770px;
   margin: 0 auto;
-}
-
-%check-none{
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  position: absolute;
 }
 
 %display-center-center {
