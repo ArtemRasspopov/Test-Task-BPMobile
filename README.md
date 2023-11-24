@@ -13,4 +13,7 @@
 
 https://artemrasspopov.github.io/projects-conteiner/progects/test-task-bp-mobile/index.html?lang=en
 
+## Баги / не реализованный функционал 
+
+- Адаптив под разные переводы текста
 
