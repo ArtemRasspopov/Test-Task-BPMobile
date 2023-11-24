@@ -1,3 +1,109 @@
 @include('components/_head.html')
 
-<main>Get Unlimited Access</main>
+<body>
+  <main class="bunner">
+    <div class="bunner__wrapper">
+      <div class="container">
+        <div class="bunner__inner">
+          <div class="bunner__cross-btn">
+            @include('components/buttons/_cross-btn.html')
+          </div>
+          <div class="bunner__content">
+            <h1 class="bunner__title" data-leng="Get Unlimited <br>Access">
+              Get Unlimited <br />
+              Access
+            </h1>
+            <ul class="bunner__cards_list">
+              <li
+                class="bunner__cards_list-item"
+                style="background-image: url(../assets/images/banner-img/1.jpg)"
+              >
+                <p
+                  class="bunner__cards_list-text"
+                  data-leng="Unlimited Art <br>Creation"
+                >
+                  Unlimited Art Creation
+                </p>
+              </li>
+              <li
+                class="bunner__cards_list-item"
+                style="background-image: url(../assets/images/banner-img/2.jpg)"
+              >
+                <p
+                  class="bunner__cards_list-text"
+                  data-leng="Exclusive <br>Styles"
+                >
+                  Exclusive Styles
+                </p>
+              </li>
+              <li
+                class="bunner__cards_list-item"
+                style="background-image: url(../assets/images/banner-img/3.jpg)"
+              >
+                <p
+                  class="bunner__cards_list-text"
+                  data-leng="Magic Avatars <br>With 20% Off"
+                >
+                  Magic Avatars With 20% Off
+                </p>
+              </li>
+            </ul>
+            <ul class="bunner__selectors_list">
+              <li
+                class="bunner__selectors_list-item --best-offer --active"
+                data-link="https://apple.com/"
+              >
+                <div class="bunner__selectors_list-item-info">
+                  <p
+                    class="bunner__selectors_list-item-title"
+                    data-leng="YEARLY ACCESS"
+                  >
+                    Yearly access
+                  </p>
+                  <p
+                    class="bunner__selectors_list-item-subtitle"
+                    data-leng="Just {{price}} per year"
+                  >
+                    Just $<span id="yearlyPricePlaceholder">39.99</span> per
+                    year
+                  </p>
+                </div>
+                <p
+                  class="bunner__selectors_list-item-price"
+                  data-leng="{{price}} <br>per week"
+                >
+                  $0.48 <br />
+                  per week
+                </p>
+              </li>
+              <li
+                class="bunner__selectors_list-item"
+                data-link="https://google.com/"
+              >
+                <div class="bunner__selectors_list-item-info">
+                  <p
+                    class="bunner__selectors_list-item-title"
+                    data-leng="WEEKLY ACCESS"
+                  >
+                    Weekly access
+                  </p>
+                </div>
+                <p
+                  class="bunner__selectors_list-item-price"
+                  data-leng="{{price}} <br>per week"
+                >
+                  $6.99 <br />
+                  per week
+                </p>
+              </li>
+            </ul>
+            @include('components/buttons/_btn.html')
+          </div>
+          @include('components/_footer.html')
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="../js/main.min.js"></script>
+</body>

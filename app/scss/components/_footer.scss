@@ -1,3 +1,24 @@
-.footer{
-  color: green;
+.footer {
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: 30px;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  &__list_item-link {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12.5px;
+    letter-spacing: 0.577px;
+  }
+}
+
+@media (max-width: 376px) {
+  .footer {
+    margin-bottom: 11px;
+  }
 }
