@@ -48,7 +48,7 @@ function scripts () {
 
 //сжатие изображений
 function images () {
-  return src('app/images/**/*.*')
+  return src('app/assets/images/**/*.*')
     .pipe(imagemin([
       imagemin.gifsicle({interlaced: true}),
 	    imagemin.mozjpeg({quality: 75, progressive: true}),
@@ -104,5 +104,5 @@ exports.cleanDist = cleanDist;
 exports.htmlInclude = htmlInclude;
 
 
-exports.build = series(cleanDist, images, build);
+exports.build = series(cleanDist, build);
 exports.default = parallel(htmlInclude, styles, scripts, browsersync, watching);

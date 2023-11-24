@@ -20,42 +20,27 @@ $(function () {
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty("--vh", `${vh}px`);
 
-  const languageStrings = {};
-
   function setLanguage(lang) {
-    document.querySelectorAll("[data-leng]").forEach((element) => {
-      const translationKey = element.getAttribute("data-leng");
+    const jsonPath = `../assets/lang-strings/${lang}.json`;
 
-      if (languageStrings[lang] && translationKey in languageStrings[lang]) {
-        element.innerHTML = languageStrings[lang][translationKey];
-      }
+    $.getJSON(jsonPath, function (langData) {
+      document.querySelectorAll("[data-leng]").forEach((element) => {
+        const translationKey = element.getAttribute("data-leng");
+
+        if (langData && translationKey in langData) {
+          element.innerHTML = langData[translationKey];
+        }
+      });
+    }).fail(function (jqxhr, textStatus, error) {
+      const err = textStatus + ", " + error;
+      console.error("Request Failed: " + err);
     });
   }
 
-  function loadLanguageData(lang) {
-    return fetch(`/assets/lang-strings/${lang}.json`)
-      .then((response) => response.json())
-      .then((data) => {
-        languageStrings[lang] = data;
-      })
-      .catch((error) =>
-        console.error(`Error loading ${lang} language data`, error)
-      );
-  }
-
-  function getParameterByName(name, url) {
-    if (!url) url = window.location.href;
-    name = name.replace(/[\[\]]/g, "\\$&");
-    const regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-      results = regex.exec(url);
-    if (!results) return null;
-    if (!results[2]) return "";
-    return decodeURIComponent(results[2].replace(/\+/g, " "));
-  }
-
-  const langParam = getParameterByName("lang");
+  const params = new URLSearchParams(window.location.search);
+  const langParam = params.get("lang");
 
   if (langParam) {
-    loadLanguageData(langParam).then(() => setLanguage(langParam));
+    setLanguage(langParam);
   }
 });
