@@ -1,0 +1,24 @@
+.bunner.lang_fr {
+  .bunner {
+    &__title {
+      br {
+        display: none;
+      }
+    }
+
+    &__selectors_list-item-price {
+      margin-right: 8px;
+    }
+
+    &__selectors_list-item-subtitle {
+      font-size: 13px;
+    }
+    &__selectors_list-item-title {
+      font-size: 15px;
+    }
+  }
+}
+
+.footer__list_item-link.lang_fr {
+  font-size: 9px;
+}

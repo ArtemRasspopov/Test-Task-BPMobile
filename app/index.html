@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Test-Task-BPMobile</title>
   <link rel="stylesheet" href="css/style.min.css">
+
 </head>
 
 
@@ -45,7 +46,9 @@
             <ul class="bunner__cards_list">
               <li
                 class="bunner__cards_list-item"
-                style="background-image: url(../assets/images/banner-img/1.jpg)"
+                style="
+                  background-image: url('./assets/images/banner-img/1-x4.jpg');
+                "
               >
                 <p
                   class="bunner__cards_list-text"
@@ -56,7 +59,9 @@
               </li>
               <li
                 class="bunner__cards_list-item"
-                style="background-image: url(../assets/images/banner-img/2.jpg)"
+                style="
+                  background-image: url('./assets/images/banner-img/2-x4.jpg');
+                "
               >
                 <p
                   class="bunner__cards_list-text"
@@ -67,7 +72,9 @@
               </li>
               <li
                 class="bunner__cards_list-item"
-                style="background-image: url(../assets/images/banner-img/3.jpg)"
+                style="
+                  background-image: url('./assets/images/banner-img/3-x4.jpg');
+                "
               >
                 <p
                   class="bunner__cards_list-text"
@@ -79,9 +86,15 @@
             </ul>
             <ul class="bunner__selectors_list">
               <li
-                class="bunner__selectors_list-item --best-offer --active"
+                class="bunner__selectors_list-item --active"
                 data-link="https://apple.com/"
               >
+                <div
+                  class="bunner__selectors_list-item-best_price-block"
+                  data-leng="BEST OFFER"
+                >
+                  best offer
+                </div>
                 <div class="bunner__selectors_list-item-info">
                   <p
                     class="bunner__selectors_list-item-title"
@@ -149,6 +162,5 @@
       </div>
     </div>
   </main>
-
-  <script src="../js/main.min.js"></script>
+  <script src="./js/main.min.js"></script>
 </body>

@@ -1,0 +1,33 @@
+.bunner.lang_ja {
+  @media (max-width: 375px) and (min-height: 667px) {
+    .bunner {
+      &__content {
+        margin-top: 44px;
+      }
+    }
+  }
+
+  @media (min-width: 375px) and (min-height: 812px) {
+    .bunner {
+      &__content {
+        margin-top: 145px;
+      }
+    }
+  }
+
+  @media (max-width: 428px) and (min-height: 926px) {
+    .bunner {
+      &__content {
+        margin-top: 210px;
+      }
+    }
+  }
+
+  @media (max-width: 430px) and (min-height: 932px) {
+    .bunner {
+      &__content {
+        margin-top: 210px;
+      }
+    }
+  }
+}

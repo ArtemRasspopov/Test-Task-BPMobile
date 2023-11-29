@@ -11,9 +11,6 @@
 
 ## Demo 
 
-https://artemrasspopov.github.io/projects-conteiner/progects/test-task-bp-mobile/index.html?lang=en
+https://main--inquisitive-lollipop-95568e.netlify.app/progects/test-task-bp-mobile
 
-## Баги / не реализованный функционал 
-
-- Адаптив под разные переводы текста
 
