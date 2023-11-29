@@ -13,8 +13,7 @@
 
 ## Demo 
 
-https://app.netlify.com/sites/tubular-salmiakki-73be48/configuration/general
-
+https://tubular-salmiakki-73be48.netlify.app
 
 
 
