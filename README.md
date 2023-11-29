@@ -13,7 +13,7 @@
 
 ## Demo 
 
-https://main--inquisitive-lollipop-95568e.netlify.app/progects/test-task-bp-mobile
+https://app.netlify.com/sites/tubular-salmiakki-73be48/configuration/general
 
 
 
